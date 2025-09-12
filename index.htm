@@ -7,76 +7,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ohio State alum, rodent paleoecologist, and lover of burrowing critters. ">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
 
-    <Adding font>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Use Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             background-color: #1a1a1a; 
             color: #e0e0e0; 
-            font-family: 'Lato', sans-serif;
+            font-family: 'Quicksand', sans-serif;
         }
 
         .header, .footer, .wrapper {
             background-color: #004b23; 
+            border-radius: 20px;
+            padding: 10px;
         }
 
         h1, h2, h3 {
             color: #f4e285; 
-            font-family: 'Lato', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+		#about-me::before {
+   		 content: "🐇 ";
+		}
+        
+        #research-interests::before {
+            content: "🐭 ";
+        }
+        #conferences-and-meetings::before {
+            content: "🦫 ";
         }
 
         a {
             color: #9bc400; 
             text-decoration: none;
+            transition: all 0.2s ease;
         }
 
         a:hover {
             color: #f4e285; 
+            transform: scale(1.05);
         }
 
         button, .button {
             background-color: #004b23; 
             color: #e0e0e0; 
-            border: 1px solid #9bc400; 
-            padding: 10px 20px;
+            border: 2px solid #9bc400; 
+            border-radius: 30px; /* pill shape */
+            padding: 10px 25px;
             cursor: pointer;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+            transition: all 0.2s ease;
         }
 
         button:hover, .button:hover {
             background-color: #9bc400; 
             color: #004b23; 
-        }
-
-        .header h1, .header h2 {
-            color: #f4e285; 
-            font-family: 'Lato', sans-serif; 
+            transform: scale(1.05);
         }
 
         section {
             background-color: #1f1f1f; 
             padding: 20px;
-            border-radius: 8px;
-            font-family: 'Lato', sans-serif;
+            border-radius: 16px;
+            border: 2px dashed #9bc400;
+            margin-bottom: 20px;
         }
 
         .footer {
             background-color: #004b23;
             color: #e0e0e0;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            border-radius: 20px;
         }
 
         .profile-photo {
-            border: 3px solid #9bc400; 
+            border: 6px dashed #9bc400; 
             border-radius: 50%; 
+            padding: 8px;
+            background-color: #1f1f1f;
             width: 300px;
             height: 300px;
         }
@@ -88,8 +105,8 @@
             color: #a0a0a0;
             margin-top: 40px;
             padding: 10px 0;
-            border-top: 1px solid #333;
-            font-family: 'Lato', sans-serif;
+            border-top: 2px dashed #333;
+            font-family: 'Quicksand', sans-serif;
         }
     </style>
   </head>
@@ -97,39 +114,27 @@
   <body>
     <div class="wrapper">
       <header>
-
-   <img src="./assets/img/profile-picture.jpg" width="300" height="300" alt="Madeline Ball" class="profile-photo">
-
+        <img src="./assets/img/profile-picture.jpg" width="300" height="300" alt="Madeline Ball" class="profile-photo">
         <h1>Madeline Ball</h1> 
-        
         <div class="affiliation">
-
-        Ph.D. Student
-        <br>
-        
-       	University of Oregon
-        
-        <br>
-        mpball@uoregon.edu
-          
-        <br>
-	<br>
-
-<a class="link" href="./assets/docs/CV_MadelineBall_091125.pdf">CV</a> · <a class="link" href="https://github.com/mpball60">Github</a> · <a class="link" href="https://scholar.google.com/citations?hl=en&user=mrD-Oh8AAAAJ">Google Scholar</a></div>
-
+          Ph.D. Student <br>
+          University of Oregon <br>
+          <a href="mailto:mpball@uoregon.edu">mpball@uoregon.edu</a>
+          <br><br>
+          <a class="link" href="./assets/docs/CV_MadelineBall_091125.pdf">📄 CV</a> · 
+          <a class="link" href="https://github.com/mpball60">💻 Github</a> · 
+          <a class="link" href="https://scholar.google.com/citations?hl=en&user=mrD-Oh8AAAAJ">📚 Google Scholar</a>
         </div>
-
       </header>
+
       <section>
+        <h3 id="about-me">About Me</h3>
+        <p>I am a Ph.D. student at the University of Oregon, advised by Dr. <a href="https://cas.uoregon.edu/directory/earth-sciences/all/shopkins">Samantha Hopkins</a>. My research focuses on small mammal paleoecology, particularly during the Oligocene-Miocene of the Pacific Northwest.</p>
+        <p>I recieved my B.Sc. in Evolution and Ecology from The Ohio State University and completed an undergraduate thesis on the evolution and ecology of bite force in geomorph rodents under the supervision of Dr. <a href="https://jonathancalede.wordpress.com/people/">Jonathan Calede</a>.</p>
+      </section>
 
-      <h3 id="about-me">About Me</h3>
-
-<p>I am a Ph.D. student at the University of Oregon, advised by Dr. <a href="https://cas.uoregon.edu/directory/earth-sciences/all/shopkins">Samantha Hopkins</a>. My research focuses on small mammal paleoecology, particularly during the Oligocene-Miocene of the Pacific Northwest.</p>
-
-<p>I recieved my B.Sc. in Evolution and Ecology from The Ohio State University and completed an undergraduate thesis on the evolution and ecology of bite force in geomorph rodents under the supervision of Dr. <a href="https://jonathancalede.wordpress.com/people/">Jonathan Calede</a>.</p>
-
-<h3 id="research-interests">Research Interests</h3>
-
+      <section>
+        <h3 id="research-interests">Research Interests</h3>
 <ul>
   <li style="margin-bottom: 1em;"><strong>Methods in paleoecology</strong>: Developing computer vision methods, particularly convolutional neural networks (CNNs), to classify dietary ecologies in modern and fossil small mammals, with the goal of advancing 2D approaches to enable large-scale analyses and make paleoecological research more accessible. </li>
 
@@ -139,17 +144,20 @@
 
   <li style="margin-bottom: 1em;"><strong>Dark data</strong>: Utilizing unpublished or under-catalogued fossil specimens housed in museum collections to expand available datasets. These “dark data” provide critical insights into species occurrences, ecological traits, and community structure that are often absent from published databases.</li>
 </ul>
+      </section>
 
-<h3 id="conferences-and-meetings">Selected Conferences and Meetings</h3>
-<ul>
-  <li><strong>[Aug. 2024]</strong> North American Rodents: Landscapes, Ecology, and Evolution (NARLEE) Field Trip; Rocky Mountain National Park, CO.</li>
-  <li><strong>[Jul. 2024]</strong> Paleobiology Database Summer Workshop, George Mason University, Fairfax, VA.</li>
-  <li><strong>[Jun. 2024]</strong> North American Rodents: Landscapes, Ecology, and Evolution (NARLEE) Workshop, Mammalian diversification and distribution dynamics on evolving landscapes; Ann Arbor, MI.</li>
-  <li><strong>[Jun. 2024]</strong> North American Paleontological Convention; Ann Arbor, MI. [Poster]</li>
-  <li><strong>[Oct. 2023]</strong> Annual Meeting of the Society of Vertebrate Paleontology; Cincinnati, OH. [Poster]</li>
-  <li><strong>[Oct. 2022]</strong> Great Lakes Student PaleoConference; Chicago, IL. [Poster]</li>
-  <li><strong>[Jan. 2021]</strong> Society for Comparative and Integrative Biology Annual Meeting; Phoenix, AZ. [Poster]</li>
-</ul>
-
-
+      <section>
+        <h3 id="conferences-and-meetings">Conferences and Meetings</h3>
+        <ul>
+          <li><strong>[Aug. 2024]</strong> North American Rodents: Landscapes, Ecology, and Evolution (NARLEE) Field Trip; Rocky Mountain National Park, CO.</li>
+          <li><strong>[Jul. 2024]</strong> Paleobiology Database Summer Workshop, George Mason University, Fairfax, VA.</li>
+          <li><strong>[Jun. 2024]</strong> North American Rodents: Landscapes, Ecology, and Evolution (NARLEE) Workshop, Mammalian diversification and distribution dynamics on evolving landscapes; Ann Arbor, MI.</li>
+          <li><strong>[Jun. 2024]</strong> North American Paleontological Convention; Ann Arbor, MI. [Poster]</li>
+          <li><strong>[Oct. 2023]</strong> Annual Meeting of the Society of Vertebrate Paleontology; Cincinnati, OH. [Poster]</li>
+          <li><strong>[Oct. 2022]</strong> Great Lakes Student PaleoConference; Chicago, IL. [Poster]</li>
+          <li><strong>[Jan. 2021]</strong> Society for Comparative and Integrative Biology Annual Meeting; Phoenix, AZ. [Poster]</li>
+        </ul>
+      </section>
+    </div>
+  </body>
 </html>
