@@ -285,7 +285,7 @@ section p:last-child { margin-bottom: 0; }
 .slideshow.single .slide figcaption:empty { padding: 0; }
 
 /* #training photos: one thumbnail beside each item */
-.timeline li.has-photo { grid-template-columns: 7rem 1fr 320px; align-items: start; }
+.timeline li.has-photo { grid-template-columns: 7rem 1fr 3260px; align-items: start; }
 .thumb { margin: 0; }
 .thumb img {
   display: block;
