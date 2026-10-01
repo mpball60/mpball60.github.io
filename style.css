@@ -170,11 +170,10 @@ section p:last-child { margin-bottom: 0; }
 
 /* #heading emojis, keyed to each heading id */
 #about-me::before { content: "🦔 "; }
-#research-interests::before { content: "🐭 "; }
 #publications::before { content: "🐿️ "; }
 #cv::before { content: "📄 "; }
 #presentations::before { content: "🦫 "; }
-#teaching::before { content: "🐹 "; }
+#teaching::before { content: "🐭 "; }
 #fieldwork::before { content: "🦴 "; }
 #training-and-outreach::before { content: "🐀 "; }
 
