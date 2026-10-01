@@ -18,7 +18,6 @@
 
 <body>
 
-  <!-- #nav: same list on every page, aria-current marks the page you're on -->
   <nav class="site-nav" aria-label="Pages">
     <ul>
       <li><a href="./index.html">Home</a></li>
@@ -43,17 +42,12 @@
       <!-- #fieldwork, from cv -->
       <section aria-labelledby="fieldwork">
         <!-- #one slideshow per trip: 2026 john day (2026-1 to 4), 2025 john day (2025-3 to 8), 2025 switzerland (2025-1 and 2) -->
-        <!-- #photos that aren't uploaded yet stay hidden, so a trip with no photos just shows text -->
-        <!-- #resize photos to about 1600px wide before uploading so the page loads fast -->
         <ul class="timeline">
           <li>
             <span class="when">2026</span>
             <div>John Day &amp; Eastern, OR, USA
               <span class="sub">Participated in paleontological fieldwork in the Arikareean deposits of the John Day Formation, Barstovian deposits of the Butte Creek Volcanic Sandstone and Mascall Formations, Clarendonian deposits of the Juntura and Ironside Formations, and the Hemphillian deposits of the Rattlesnake Formation.</span></div>
             <!-- #2026 fieldwork photos: assets/img/fieldwork/2026-1.jpg through 2026-4.jpg -->
-            <!-- #copy a whole <figure> block and bump the number to add a photo, delete one to drop it -->
-            <!-- #write a caption between the figcaption tags, or leave it empty -->
-            <!-- #swap the alt text for a short description of each photo -->
             <div class="slideshow" aria-roledescription="carousel" aria-label="2026 fieldwork photos">
               <div class="slides" tabindex="0">
               <figure class="slide">
@@ -83,7 +77,6 @@
             <div>John Day &amp; Eastern, OR, USA
               <span class="sub">Participated in paleontological fieldwork in Arikareean deposits of the John Day Basin, Barstovian deposits of the Succor Creek Formation, and Hemingfordian deposits of Coglan Buttes, and led fieldwork in Barstovian deposits near Beatys Butte.</span></div>
             <!-- #2025 john day photos: 2025-3.jpg through 2025-7.jpg -->
-            <!-- #2025-5, 6 and 7 end in capital .JPG on purpose: that is how github has them saved -->
             <div class="slideshow" aria-roledescription="carousel" aria-label="2025 John Day fieldwork photos">
               <div class="slides" tabindex="0">
               <figure class="slide">
@@ -95,15 +88,15 @@
                 <figcaption></figcaption>
               </figure>
               <figure class="slide">
-                <img src="./assets/img/fieldwork/2025-5.JPG" alt="2025 fieldwork, John Day, Oregon, photo 3" data-optional>
+                <img src="./assets/img/fieldwork/2025-5.jpg" alt="2025 fieldwork, John Day, Oregon, photo 3" data-optional>
                 <figcaption></figcaption>
               </figure>
               <figure class="slide">
-                <img src="./assets/img/fieldwork/2025-6.JPG" alt="2025 fieldwork, John Day, Oregon, photo 4" data-optional>
+                <img src="./assets/img/fieldwork/2025-6.jpg" alt="2025 fieldwork, John Day, Oregon, photo 4" data-optional>
                 <figcaption></figcaption>
               </figure>
               <figure class="slide">
-                <img src="./assets/img/fieldwork/2025-7.JPG" alt="2025 fieldwork, John Day, Oregon, photo 5" data-optional>
+                <img src="./assets/img/fieldwork/2025-7.jpg" alt="2025 fieldwork, John Day, Oregon, photo 5" data-optional>
                 <figcaption></figcaption>
               </figure>
               </div>
