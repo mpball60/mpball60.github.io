@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fieldwork | Madeline Ball</title>
+  <meta name="description" content="Fieldwork, Madeline Ball, University of Oregon.">
+  <link rel="icon" href="./assets/img/gopher.png" type="image/png">
+
+  <!-- #fonts: quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- #styles: every page shares style.css, so edit colors there once -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- #nav: same list on every page, aria-current marks the page you're on -->
+  <nav class="site-nav" aria-label="Pages">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./presentations.html">Presentations</a></li>
+      <li><a href="./teaching.html">Teaching</a></li>
+      <li><a href="./fieldwork.html" aria-current="page">Fieldwork</a></li>
+      <li><a href="./training.html">Training &amp; Outreach</a></li>
+      <li><a href="./assets/CV_MadelineBall.pdf">CV</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <!-- #page header -->
+    <header class="page-head">
+      <p class="eyebrow"><a href="./index.html">Madeline Ball</a></p>
+      <h1 id="fieldwork">Fieldwork</h1>
+    </header>
+
+    <main>
+
+      <!-- #fieldwork, from cv -->
+      <section aria-labelledby="fieldwork">
+        <!-- #one slideshow per year: 2026 under its trip, 2025 under the last 2025 trip and covers both -->
+        <!-- #photos that aren't uploaded yet stay hidden, so a trip with no photos just shows text -->
+        <!-- #resize photos to about 1600px wide before uploading so the page loads fast -->
+        <ul class="timeline">
+          <li>
+            <span class="when">2026</span>
+            <div>John Day &amp; Eastern, OR, USA
+              <span class="sub">Participated in paleontological fieldwork in the Arikareean deposits of the John Day Formation, Barstovian deposits of the Butte Creek Volcanic Sandstone and Mascall Formations, Clarendonian deposits of the Juntura and Ironside Formations, and the Hemphillian deposits of the Rattlesnake Formation.</span></div>
+            <!-- #2026 fieldwork photos: upload as assets/img/fieldwork/2026-1.jpg, -2.jpg, -3.jpg -->
+            <!-- #copy a whole <figure> block to add a 4th photo, delete one to drop it -->
+            <!-- #write a caption between the figcaption tags, or leave it empty -->
+            <!-- #swap the alt text for a short description of each photo -->
+            <div class="slideshow" aria-roledescription="carousel" aria-label="2026 fieldwork photos">
+              <div class="slides" tabindex="0">
+              <figure class="slide">
+                <img src="./assets/img/fieldwork/2026-1.jpg" alt="2026 fieldwork, photo 1" data-optional>
+                <figcaption></figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="./assets/img/fieldwork/2026-2.jpg" alt="2026 fieldwork, photo 2" data-optional>
+                <figcaption></figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="./assets/img/fieldwork/2026-3.jpg" alt="2026 fieldwork, photo 3" data-optional>
+                <figcaption></figcaption>
+              </figure>
+              </div>
+              <button type="button" class="prev" aria-label="Previous photo">‹</button>
+              <button type="button" class="next" aria-label="Next photo">›</button>
+              <div class="dots"></div>
+            </div>
+          </li>
+          <li>
+            <span class="when">2025</span>
+            <div>John Day &amp; Eastern, OR, USA
+              <span class="sub">Participated in paleontological fieldwork in Arikareean deposits of the John Day Basin, Barstovian deposits of the Succor Creek Formation, and Hemingfordian deposits of Coglan Buttes, and led fieldwork in Barstovian deposits near Beatys Butte.</span></div>
+          </li>
+          <li>
+            <span class="when">2025</span>
+            <div>Porrentruy, Switzerland, JURASSICA Museum
+              <span class="sub">Excavated actinopterygian, crocodylomorph, and testudinate fossils from the Kimmeridgian-aged deposits of the Reuchenette Fm.</span></div>
+            <!-- #2025 fieldwork, Oregon and Switzerland photos: upload as assets/img/fieldwork/2025-1.jpg, -2.jpg, -3.jpg -->
+            <!-- #copy a whole <figure> block to add a 4th photo, delete one to drop it -->
+            <!-- #write a caption between the figcaption tags, or leave it empty -->
+            <!-- #swap the alt text for a short description of each photo -->
+            <div class="slideshow" aria-roledescription="carousel" aria-label="2025 fieldwork, Oregon and Switzerland photos">
+              <div class="slides" tabindex="0">
+              <figure class="slide">
+                <img src="./assets/img/fieldwork/2025-1.jpg" alt="2025 fieldwork, Oregon and Switzerland, photo 1" data-optional>
+                <figcaption></figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="./assets/img/fieldwork/2025-2.jpg" alt="2025 fieldwork, Oregon and Switzerland, photo 2" data-optional>
+                <figcaption></figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="./assets/img/fieldwork/2025-3.jpg" alt="2025 fieldwork, Oregon and Switzerland, photo 3" data-optional>
+                <figcaption></figcaption>
+              </figure>
+              </div>
+              <button type="button" class="prev" aria-label="Previous photo">‹</button>
+              <button type="button" class="next" aria-label="Next photo">›</button>
+              <div class="dots"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- #footer: update the month when you edit the page -->
+    <footer class="footer-note">
+      © 2026 Madeline Ball · Last updated October 2026
+    </footer>
+
+  </div>
+  <script src="./site.js" defer></script>
+</body>
+</html>
